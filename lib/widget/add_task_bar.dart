@@ -47,6 +47,19 @@ class _AddTaskBarState extends State<AddTaskBar> {
                 )
               ),
             ) 
+          ),
+
+          const SizedBox(width: 10,),
+
+          Material(
+            color: const Color(0xFFE05264),
+            borderRadius: BorderRadius.circular(10),
+            child: InkWell(
+              borderRadius: BorderRadius.circular(10),
+              onTap: _submit,
+              child: const Padding(padding: EdgeInsets.all(14),
+              child: Icon(Icons.add, color: Colors.white,),),
+            ),
           )
         ],
       ),
