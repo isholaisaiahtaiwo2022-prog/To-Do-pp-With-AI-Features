@@ -1,24 +1,22 @@
 import 'package:flutter/material.dart';
-import 'package:to_doapp/widget/HomePage.dart';
+import 'package:to_doapp/Screens/to_do_Screen.dart';
+// import 'screens/todo_screen.dart';
 
-void main() {
-  runApp(const MyApp());
-}
+void main() => runApp(const TodoApp());
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+class TodoApp extends StatelessWidget {
+  const TodoApp({super.key});
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      
-      theme: ThemeData(
- 
-        primaryColor: Colors.yellow,
-      ),
+      title: 'To Do App',
       debugShowCheckedModeBanner: false,
-      home: const Homepage(),
+      theme: ThemeData(
+        fontFamily: 'Roboto',
+        scaffoldBackgroundColor: const Color(0xFFF7D842),
+      ),
+      home: const TodoScreen(),
     );
   }
-}
+  }

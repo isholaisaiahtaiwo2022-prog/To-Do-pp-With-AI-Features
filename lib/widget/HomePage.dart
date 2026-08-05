@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:to_doapp/models/task.dart';
 
 class Homepage extends StatefulWidget {
   const Homepage({super.key});
@@ -15,12 +14,11 @@ class _HomepageState extends State<Homepage> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.yellow[200],
-      appBar: AppBar(title: Text("TO DO"), elevation: 0),
+      appBar: AppBar(title: const Text("TO DO"), elevation: 0),
       body: ListView.builder(
         itemCount: toDoList.length,
         itemBuilder: (context, index) {
-          // return todoTile(taskName: toDoList[index] [0], 
-          // taskCompleted: taskCompleted, onChanged: onChanged)
+          return Container();
         },
       ),
     );

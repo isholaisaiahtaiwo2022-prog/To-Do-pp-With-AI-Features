@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 
-class TodoAppBar extends StatelessWidget {
+class TodoAppBar extends StatelessWidget implements PreferredSizeWidget {
   final String title;
   const TodoAppBar({super.key, this.title = 'TO DO'});
 
@@ -22,6 +21,7 @@ class TodoAppBar extends StatelessWidget {
     );
   }
 
-  // @override
-  // Size get PreferredSize => const Size.fromHeight(kToolbarHeight);
+  @override
+  Size get preferredSize => const Size.fromHeight(kToolbarHeight);
 }
+
